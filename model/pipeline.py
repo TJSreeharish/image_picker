@@ -4,7 +4,7 @@ from typing import List
 
 import numpy as np
 
-from .interfaces import FeatureExtractor, FeatureMap
+from interfaces import FeatureExtractor, FeatureMap
 
 
 class FeatureVectorPipeline:

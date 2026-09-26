@@ -8,7 +8,7 @@ import numpy as np
 from mediapipe.tasks import python as mp_python
 from mediapipe.tasks.python import vision as mp_vision
 
-from ..interfaces import FeatureExtractor, FeatureMap
+from interfaces import FeatureExtractor, FeatureMap
 
 NUM_BLENDSHAPES = 52
 

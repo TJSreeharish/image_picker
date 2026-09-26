@@ -7,7 +7,7 @@ import torch
 from PIL import Image
 from transformers import AutoImageProcessor, AutoModel
 
-from ..interfaces import FeatureExtractor, FeatureMap
+from interfaces import FeatureExtractor, FeatureMap
 
 CLS_TOKEN_DIM = 768
 DEFAULT_MODEL_NAME = "facebook/dinov3-vitb16-pretrain-lvd1689m"

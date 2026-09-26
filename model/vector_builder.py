@@ -5,7 +5,7 @@ from typing import List
 
 import numpy as np
 
-from .interfaces import FeatureMap
+from interfaces import FeatureMap
 
 
 class FeatureVectorAssembler:

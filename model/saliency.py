@@ -5,7 +5,7 @@ from typing import List, Tuple
 import cv2
 import numpy as np
 
-from ..interfaces import FeatureExtractor, FeatureMap
+from interfaces import FeatureExtractor, FeatureMap
 
 # Normalized (x, y) rule-of-thirds intersection points.
 THIRDS_POINTS = [(1 / 3, 1 / 3), (2 / 3, 1 / 3), (1 / 3, 2 / 3), (2 / 3, 2 / 3)]

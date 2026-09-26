@@ -16,13 +16,13 @@ from typing import Tuple
 import cv2
 import torch
 
-from feature_extraction.extractors.blur import LaplacianBlurExtractor
-from feature_extraction.extractors.embedding import DinoV3EmbeddingExtractor
-from feature_extraction.extractors.face import MediaPipeFaceExtractor
-from feature_extraction.extractors.lighting import LightingExtractor
-from feature_extraction.extractors.saliency import SaliencyExtractor
-from feature_extraction.pipeline import FeatureVectorPipeline
-from feature_extraction.vector_builder import FeatureVectorAssembler
+from blur import LaplacianBlurExtractor
+from embedding import DinoV3EmbeddingExtractor
+from face import MediaPipeFaceExtractor
+from lighting import LightingExtractor
+from saliency import SaliencyExtractor
+from pipeline import FeatureVectorPipeline
+from vector_builder import FeatureVectorAssembler
 
 
 def build_pipeline(
@@ -52,7 +52,7 @@ if __name__ == "__main__":
         face_model_path="face_landmarker.task", device=device
     )
 
-    image = cv2.imread("sample.jpg")
+    image = cv2.imread("/workspace/Screenshots/Screenshot from 2026-06-20 19-20-38.png")
     if image is None:
         raise FileNotFoundError("sample.jpg not found -- point this at a real image.")
 

@@ -5,7 +5,7 @@ from typing import List
 import cv2
 import numpy as np
 
-from ..interfaces import FeatureExtractor, FeatureMap
+from interfaces import FeatureExtractor, FeatureMap
 
 
 class LaplacianBlurExtractor(FeatureExtractor):
